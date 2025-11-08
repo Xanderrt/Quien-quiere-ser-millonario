@@ -1,0 +1,397 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap");
+
+:root {
+  --white: #fff;
+  --gray: #d6d6d6;
+  --black: #292929;
+  --primario: #cecece;
+  --secundario: #5e5e5e;
+  --terciario: #9e9e9e;
+  --transparent: rgba(0, 0, 0, 0.3);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 62.5%;
+  font-family: "Roboto", sans-serif;
+  font-style: italic;
+  font-weight: 700;
+}
+
+h1 {
+  font-size: 3rem;
+  color: var(--white);
+  margin-bottom: 5rem;
+  font-style: normal;
+}
+
+h2 {
+  font-size: 2.8rem;
+  margin-bottom: 4rem;
+  text-align: center;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  /*  IMAGEN ANIMADA DE FONDO  */
+  background-image: url(/img/fondo.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  background-color: var(--gray);
+}
+
+.container {
+  width: 100vw;
+  height: 90.9vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: baseline;
+  max-width: 90rem;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.container-index {
+  align-items: center;
+  justify-content: center;
+}
+
+.container-puntajes {
+  align-items: center;
+  justify-content: center;
+}
+
+.container-end {
+  align-items: center;
+  justify-content: center;
+}
+
+.end {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.head {
+  width: 80vw;
+  height: 5vh;
+  display: flex;
+  justify-content: space-between;
+}
+
+.logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 25px;
+  padding: 1rem;
+  margin: 1rem;
+}
+
+.logo img {
+  width: 180px;
+  height: auto;
+  padding: 2rem 3rem;
+}
+
+.logo-bolivar {
+  background: var(--white);
+  border-radius: 0 0 30px 30px;
+}
+
+.flex-column {
+  display: flex;
+  flex-direction: column;
+}
+
+.flex-center {
+  justify-content: center;
+  align-items: center;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.hidden {
+  display: none;
+}
+
+.logo-QQSB {
+  width: 500px;
+  height: 500px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 3rem;
+}
+
+.logo-QQSB img {
+  width: 80%;
+  height: auto;
+}
+
+.btn {
+  font-size: 2.4rem;
+  padding: 1.5rem 0;
+  width: 30rem;
+  text-align: center;
+  margin: 1rem 0.5rem;
+  text-decoration: none;
+  color: var(--white);
+  background-color: var(--secundario);
+  border-radius: 5rem;
+  border: 2px solid var(--white);
+  transition: transform 0.5s;
+  box-shadow: 0 0 var(--transparent);
+}
+
+.contenedor-botones {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.menu {
+  display: flex;
+  justify-content: space-between;
+  width: 400px;
+}
+
+.menu a {
+  font-size: 2.2rem;
+}
+
+.btn:hover {
+  cursor: pointer;
+  box-shadow: 0.2rem 0.2rem var(--transparent);
+  transform: scale(1.1);
+}
+
+/* MODAL  */
+.instrucciones-container {
+  width: 98vw;
+  height: 98vh;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  visibility: hidden;
+}
+
+.mostrar {
+  visibility: visible;
+}
+
+.modal-contenedor {
+  width: 50vw;
+  height: 780px;
+  background-color: var(--terciario);
+  border-radius: 20px;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.5s;
+  transform: scale(0);
+}
+
+.show-instrucciones {
+  transform: scale(1);
+}
+
+.margen-modal {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+  height: 750px;
+  width: 95%;
+  border: 3px solid var(--primario);
+  border-radius: 15px;
+}
+
+.tittle-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 5rem;
+  width: 100%;
+  margin: 0;
+}
+
+.tittle-section h1 {
+  font-style: italic;
+  margin: 0;
+  padding-left: 50px;
+  padding-right: 20px;
+}
+
+.tittle-section i {
+  color: var(--primario);
+  font-size: 3rem;
+  padding-right: 50px;
+  transition: all 0.3s;
+  transform: scaleX(1);
+}
+
+.tittle-section i:hover {
+  color: var(--terciario);
+  transform: scale(1.1);
+}
+
+.tittle-section i:active {
+  color: var(--secundario);
+  transform: scale(0.9);
+}
+
+.contenido-instrucciones {
+  width: 95%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+  border-top: 2px solid var(--primario);
+}
+
+.instruccion {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 25%;
+}
+
+.texto-instruccion {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  height: 100%;
+  padding: 0.6rem 5rem;
+}
+
+.texto-instruccion p {
+  font-size: 1.6rem;
+  color: var(--white);
+  font-style: normal;
+  text-align: center;
+}
+
+.imagen-instruccion {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  height: 25%;
+}
+
+@media (max-width: 1300px) {
+  .modal-container {
+    width: 75vw;
+  }
+
+  .instruccion {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 50%;
+  }
+
+  .texto-instruccion p {
+    font-size: 1rem;
+    color: var(--white);
+    font-style: normal;
+    text-align: center;
+  }
+
+  .imagen-instruccion {
+    height: 50%;
+  }
+
+  .imagen-instruccion img {
+    height: 80px;
+  }
+}
+
+/* FIN MODAL*/
+
+.btn[disabled]:hover {
+  background: var(--gray);
+  color: var(--terciario);
+  cursor: not-allowed;
+  box-shadow: none;
+  transform: none;
+}
+
+#highscore-btn {
+  background-color: var(--terciario);
+}
+
+/*End*/
+
+.end-form-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 30rem;
+}
+
+input {
+  margin-bottom: 1rem;
+  width: 20rem;
+  padding: 1.5rem;
+  font-size: 1.8rem;
+  border: none;
+  box-shadow: 0 0 var(--transparent);
+}
+
+input::placeholder {
+  color: var(--secundario);
+  font-style: normal;
+  font-weight: 400;
+}
+
+#username {
+  margin-bottom: 3rem;
+  width: 100%;
+  outline: none;
+}
+
+#end-text {
+  font-size: 2.4rem;
+  color: var(--white);
+  text-align: center;
+}
+
+#saveScoreBtn {
+  border: none;
+}
+
+.game {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}

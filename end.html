@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quien Quiere Ser Bioseguro</title>
+    <link rel="icon" href="/img/Favicon_100.svg" />
+    <link rel="stylesheet" href="/css-QQSB/QQSB.css" />
+  </head>
+  <body>
+    <div class="head">
+      <div class="logo">
+        <img src="/img/Logo 100_QQSB.png" class="logo-100" />
+      </div>
+      <div class="logo">
+        <img src="/img/Logo bolivar_QQSB.png" class="logo-bolivar" />
+      </div>
+    </div>
+    <div class="container container-end">
+      <div id="end" class="end">
+        <h1 id="finalScore">0</h1>
+        <form class="end-form-container">
+          <h2 id="end-text">¡Ingresa tu nombre para guardar tu puntaje!</h2>
+          <input
+            type="text"
+            name="name"
+            id="username"
+            placeholder="Enter your name"
+          />
+          <button
+            class="btn"
+            id="saveScoreBtn"
+            type="submit"
+            onclick="saveHighScore(event)"
+            disabled
+          >
+            Guardar
+          </button>
+        </form>
+        <a href="/game.html" class="btn">Jugar de nuevo</a>
+        <a href="/QQSB.html" class="btn">Inicio</a>
+      </div>
+    </div>
+    <script src="/js/end.js"></script>
+  </body>
+</html>
