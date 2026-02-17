@@ -40,7 +40,7 @@ body {
 
 .choice-container:hover {
   cursor: pointer;
-  box-shadow: 0 0.4rem var(--transparencia);
+  box-shadow: 0 0.4rem var(--transparent);
   border: 3px solid var(--white);
   transition: transform 150ms;
   transform: scale(1.1);
@@ -169,7 +169,7 @@ body {
   background-color: var(--secundario);
   transition: transform 150ms;
   transform: scale(1.1);
-  box-shadow: 0 0.4rem var(--transparencia);
+  box-shadow: 0 0.4rem var(--transparent);
   cursor: pointer;
 }
 
@@ -227,7 +227,7 @@ body {
   justify-self: center;
   height: auto;
   width: 500px;
-  filter: drop-shadow(4px 3px 3px var(--transparencia));
+  filter: drop-shadow(4px 3px 3px var(--transparent));
 }
 
 .texto-llamada {
@@ -236,7 +236,7 @@ body {
   color: var(--secundario);
   padding: 0.5rem 1rem;
   border-radius: 1rem;
-  box-shadow: 0.1rem 0.2rem var(--transparencia);
+  box-shadow: 0.1rem 0.2rem var(--transparent);
 }
 
 .texto-llamada p {
